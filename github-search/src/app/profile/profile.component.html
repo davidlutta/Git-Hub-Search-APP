@@ -40,13 +40,11 @@
 
       <h4 *ngIf="profile2.company">Working at : {{profile2.company}}</h4>
 
-      <br>
-
-      <br>
-
       <h4><span *ngIf="profile2.location" ><strong>{{profile2.location}}</strong></span></h4>
 
-      <a href="{{profile2.html_url}}"><button type="button" name="button" class="btn btn-success btn-sl" >View Profile on Github</button></a>
+      <p><span *ngIf="profile2.bio">{{profile2.bio}}</span></p>
+
+      <a href="{{profile2.html_url}}" target="_blank"><button type="button" name="button" class="btn btn-success btn-sl">View Profile on Github</button></a>
 
       <br>
 
@@ -54,12 +52,7 @@
 
     </div>
 
-    <!-- <div *ngFor="let repo of repos">
-
-      <p>{{repo.name}}</p>
-
-    </div> -->
-
 
   </div>
+
 </div>

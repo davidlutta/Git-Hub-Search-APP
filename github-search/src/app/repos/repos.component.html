@@ -1,3 +1,19 @@
-<p>
-  repos works!
-</p>
+<div class="container">
+
+  <img src="../../assets/GitHubSearch.svg" alt="img would be here" width="500px" height="500px">
+
+  <input type="text" name="username" class="form-control" [(ngModel)]="username" placeholder="Enter a GitHub username">
+
+  <button type="submit" name="button" (click)="findProfile()" class="btn btn-info btn-lg">sumbit</button>
+
+  <div class="display2">
+
+    <div *ngFor="let repo of repos">
+
+      <p>{{repo.name}}</p>
+
+    </div>
+
+  </div>
+
+</div>

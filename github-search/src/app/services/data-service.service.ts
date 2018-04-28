@@ -19,7 +19,6 @@ export class DataServiceService {
   }
 
 //Function for geting my info (predefined) for testing purposes
-
   getProfileInfo() {
 
     console.log("service Works")

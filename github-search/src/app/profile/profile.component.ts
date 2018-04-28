@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 //Importing my service which has my function for getting data from github API
 import { DataServiceService } from '../services/data-service.service';
 
+
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -20,10 +22,6 @@ export class ProfileComponent implements OnInit {
   //Declaring my updateProfile variable
 
   private profile2: string;
-
-  //Declaring my repo variable
-
-  private repos: string;
 
 
   constructor(private profileInfo: DataServiceService) {
