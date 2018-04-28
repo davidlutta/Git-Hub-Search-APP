@@ -5,6 +5,8 @@
 
 export const environment = {
   production: false,
+  //Link for git hub
   link: 'https://api.github.com/users/',
+  //API Key for Searching
   API:'?access_token=b410e135abf26ebecb7c621203ecc2da5d933654'
 };

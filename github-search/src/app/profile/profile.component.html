@@ -1,8 +1,11 @@
 <div class="container">
+
   <img src="../../assets/GitHubSearch.svg" alt="img would be here" width="500px" height="500px">
+
   <input type="text" name="username" class="form-control" [(ngModel)]="username" placeholder="Enter a GitHub username">
 
   <br>
+
   <br>
 
   <button type="submit" name="button" (click)="findProfile()" class="btn btn-info btn-lg">sumbit</button>
@@ -12,40 +15,43 @@
 </div> -->
 
   <br>
+
   <br>
+
   <br>
 
   <div *ngIf="profile2">
 
     <div class="display">
+
       <img src="{{profile2.avatar_url}}" alt="avatar" class="rounded-circle" width="400px" height="400px">
+
       <br>
+
       <br>
+
       <h1><span *ngIf="profile2.name" ><strong>{{profile2.name}}</strong></span></h1>
 
       <h1><span *ngIf="profile2.login" >{{profile2.login}}</span></h1>
 
       <h4 *ngIf="profile2.followers">Followers: {{profile2.followers}}</h4>
+
       <h4 *ngIf="profile2.following">Following: {{profile2.following}}</h4>
 
       <h4 *ngIf="profile2.company">Working at : {{profile2.company}}</h4>
+
       <br>
+
       <br>
 
       <h4><span *ngIf="profile2.location" ><strong>{{profile2.location}}</strong></span></h4>
 
       <a href="{{profile2.html_url}}"><button type="button" name="button" class="btn btn-success btn-sl" >View Profile on Github</button></a>
 
-
-
-
-
+      <br>
 
       <br>
-      <br>
-      <!-- <button type="button" class="btn btn-primary btn-sm ">Followers {{profile.followers}}</button> -->
-      <!-- <p>{{profile.}}</p> -->
-      <!-- <h3 >Public Repositories</h3> -->
+
     </div>
 
     <!-- <div *ngFor="let repo of repos">
