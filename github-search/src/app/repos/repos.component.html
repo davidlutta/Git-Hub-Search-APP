@@ -3,17 +3,36 @@
   <img src="../../assets/GitHubSearch.svg" alt="img would be here" width="500px" height="500px">
 
   <input type="text" name="username" class="form-control" [(ngModel)]="username" placeholder="Enter a GitHub username">
-
+  <br>
+  <br>
   <button type="submit" name="button" (click)="findProfile()" class="btn btn-info btn-lg">sumbit</button>
 
-  <div class="display2">
+  <br>
+  <br>
 
-    <div *ngFor="let repo of repos">
+  <h2>Public repositories:</h2>
 
-      <p>{{repo.name}}</p>
+
+  <br>
+
+  <div *ngFor="let repo of repos">
+
+    <div class="display2">
+
+    <ul class="list-group">
+
+      <a href="{{repo.html_url}}" target="_blank">
+
+        <li class="list-group-item">{{repo.name}}</li>
+
+
+      </a>
+
+    </ul>
 
     </div>
 
   </div>
+
 
 </div>
