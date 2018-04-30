@@ -46,15 +46,6 @@ export class ProfileComponent implements OnInit {
 
     })
 
-    //Subscribing to the data obtained from my getprofileRepos function
-
-      this.profileInfo.getprofileRepos(this.username).subscribe(repos => {
-
-        this.repos = repos;
-
-    })
-
-
   }
 
 

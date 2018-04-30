@@ -21,7 +21,6 @@ export class DataServiceService {
 //Function for geting my info (predefined) for testing purposes
   getProfileInfo() {
 
-    console.log("service Works")
 
     return this.http.get(environment.link + this.username + environment.API)
 
