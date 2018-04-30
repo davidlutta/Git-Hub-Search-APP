@@ -44,3 +44,9 @@ testem.log
 Thumbs.db
 
 /Users/davidlutta/Documents/moringa-school-projects/core-projects/github-search/src/environments
+
+../.DS_Store
+	../Goal-Angular-App/
+	../Goals/
+	../Quotes-/
+	../package-lock.json
