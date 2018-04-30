@@ -11,10 +11,6 @@ import { DataServiceService } from '../services/data-service.service';
 })
 export class ProfileComponent implements OnInit {
 
-  //Declaring my profile variable
-
-  private profile: string;
-
   //Declaring my usernamevariable
 
   private username: string;
@@ -24,17 +20,7 @@ export class ProfileComponent implements OnInit {
   private profile2: string;
 
 
-  constructor(private profileInfo: DataServiceService) {
-
-    //Subscribing to the data obtained from my getProfileInfo function
-
-    this.profileInfo.getProfileInfo().subscribe(profile => {
-
-      this.profile = profile;
-
-    });
-
-  }
+  constructor(private profileInfo: DataServiceService) {  }
 
   //Subscribing to the data obtained from my updateProfile function that passes this.username to replace the original username
 
