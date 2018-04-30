@@ -1,15 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <ul class="navbar-nav">
-      <li><a routerLink="/" routerLinkActive="active" href="#">Profile</a></li>
-
-      <li><a routerLink="/repos" routerLinkActive="active" href="/repos">Repositories</a></li>
-    </ul>
-  </div>
-</nav>
-<router-outlet></router-outlet>
-
-<app-profile></app-profile>
-
-<!-- <app-repos></app-repos> -->
+<!-- Router outlet  -->
+<app-navbar></app-navbar>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

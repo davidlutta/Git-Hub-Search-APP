@@ -2,7 +2,7 @@
 
   <img src="../../assets/GitHubSearch.svg" alt="img would be here" width="500px" height="500px">
 
-  <input type="text" name="username" class="form-control" [(ngModel)]="username" placeholder="Enter a GitHub username">
+  <input type="text" name="username" class="form-control" [(ngModel)]="username" placeholder="Enter a GitHub username to find their repositories">
   <br>
   <br>
   <button type="submit" name="button" (click)="findProfile()" class="btn btn-info btn-lg">sumbit</button>
@@ -10,7 +10,7 @@
   <br>
   <br>
 
-  <h2>Public repositories:</h2>
+  <h2>Public repositories: {{repos.length}}</h2>
 
 
   <br>
