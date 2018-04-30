@@ -7,6 +7,8 @@ export const environment = {
   production: false,
   //Link for git hub
   link: 'https://api.github.com/users/',
-  //API Key for Searching
-  API:'?access_token=b410e135abf26ebecb7c621203ecc2da5d933654'
+  //client_id
+  clientId:'?client_id=098140ea6fc4e0b2356c',
+  //client_secret
+  clientSecret: '&client_secret=527b28692f1952c2aa097e8f1e2d9f1c3c537b86'
 };

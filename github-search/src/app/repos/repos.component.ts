@@ -16,11 +16,11 @@ import { DataServiceService } from '../services/data-service.service';
 export class ReposComponent implements OnInit {
   //Declaring my repo variable
 
-  private repos: string;
+  public repos: string;
 
   //Declaring my username variable
 
-  private username: string;
+  public username: string;
 
 
   constructor(private profileInfo: DataServiceService) { }

@@ -13,11 +13,11 @@ export class ProfileComponent implements OnInit {
 
   //Declaring my usernamevariable
 
-  private username: string;
+  public username: string;
 
   //Declaring my updateProfile variable
 
-  private profile2: string;
+  public profile2: string;
 
 
   constructor(private profileInfo: DataServiceService) {  }
